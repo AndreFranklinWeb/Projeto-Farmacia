@@ -6,7 +6,7 @@ public class Fornecedores {
 	private String descricao;
 	
 	
-	public long getCodigo() {
+	public Long getCodigo() {
 		return codigo;
 	}
 	public void setCodigo(Long codigo) {
@@ -19,6 +19,10 @@ public class Fornecedores {
 		this.descricao = descricao;
 	}
 	
-	
+	@Override
+	public String toString() {
+		String saida = codigo + " - " + descricao;
+		return saida;
+	}
 	
 }
